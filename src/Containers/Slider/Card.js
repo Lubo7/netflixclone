@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css';
+import '../Slider/Card.css';
 
 function Card() {
     return (

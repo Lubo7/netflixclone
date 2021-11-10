@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar';
-import Banner from './Banner';
-import Slider from './Slider';
+import Navbar from './Containers/Navbar/Navbar.js';
+import Banner from './Containers/Banner/Banner.js';
+import Slider from './Containers/Slider/Slider.js';
 
 
 export class App extends Component {

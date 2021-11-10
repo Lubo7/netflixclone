@@ -1,7 +1,7 @@
 import React from 'react';
 import './Slider.css';
 import Carousel from 'react-elastic-carousel';
-import Card from './Card';
+import Card from '../Slider/Card.js';
 
 const breakPoints = [
     {width:1, itemsToShow:1},
@@ -9,7 +9,6 @@ const breakPoints = [
     {width:768, itemsToShow:3},
     {width:1200, itemsToShow:4}
 ]
-
 
 function Slider() {
     return (

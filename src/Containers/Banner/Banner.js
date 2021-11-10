@@ -2,7 +2,7 @@ import React from 'react'
 import "./Banner.css";
 import AddIcon from '@material-ui/icons/Add';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import Rising_phoenix from './assets/Banner.png';
+import Rising_phoenix from '../../assets/Banner.png';
 
 function Banner() {
     return (
