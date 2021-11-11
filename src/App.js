@@ -1,20 +1,21 @@
+import './App.css';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import React, { Component } from 'react';
-import Navbar from './Containers/Navbar/Navbar.js';
-import Banner from './Containers/Banner/Banner.js';
-import Slider from './Containers/Slider/Slider.js';
+import Login from './Containers/Login/Login';
+import Home from './Containers/Home/Home';
 
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+         <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
 
-export class App extends Component {
-  render() {
-    return (
-      <div className="app">
-        <Navbar/>
-        <Banner/>
-        <Slider/>
-
-      </div>
-    )
-  }
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
-
 export default App;
+
