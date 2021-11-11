@@ -49,9 +49,9 @@ const Login = (props) => {
         <div className="designLogin">
             <div id="style-div-form-login">
                 {/*<pre>{JSON.stringify(credentials, null,2)}</pre>*/}
-                <h1>Acceder</h1>
+                <h1>Log me in</h1>
                 <input className="style-form-login" type='email' name='email' title='email' onChange={manejadorInputs} lenght='30' placeholder="Email" />
-                <input className="style-form-login" type='password' name='password' title='password' onChange={manejadorInputs} lenght='30' placeholder="Contraseña" />
+                <input className="style-form-login" type='password' name='password' title='password' onChange={manejadorInputs} lenght='30' placeholder="Password" />
                 <div className="sendButton" onClick={() => logeame()}>Login</div>
                 <div className="error">{msgError}</div>
             </div>
