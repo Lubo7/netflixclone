@@ -26,4 +26,5 @@
     margin-top: 15px;
     transition: .2s;
     z-index: 12;
+    cursor: pointer;
 }

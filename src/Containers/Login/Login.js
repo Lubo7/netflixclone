@@ -10,7 +10,7 @@ const Login = (props) => {
 
     //Hooks
     const [msgError, setmsgError] = useState("");
-    const [credentials, setCredentials] = useState({ correo: '', clave: '' });
+    const [credentials, setCredentials] = useState({ email: '', password: '' });
 
     //Handler o manejador
     const manejadorInputs = (e) => {
@@ -34,13 +34,13 @@ const Login = (props) => {
             // localStorage.setItem("datosLogin", JSON.stringify(res.data.user));
             // localStorage.setItem("token", JSON.stringify(res.data.token));
 
-             console.log("toda la info",res);
+             console.log("all info",res);
              console.log("token: ",res.data.token);
             
                   
             history("/profile");
             } catch (error) {
-            setmsgError("Error al logearme");
+            setmsgError("Error in login");
             }
         }
 
