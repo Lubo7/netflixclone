@@ -6,9 +6,7 @@ import { LOGOUT } from '../../redux/types';
 
 const Profile = (props) => {
 
-    const logOut = () => {
-        //limpio redux...por lo tanto deslogueo
-        
+    const logOut = () => {        
         props.dispatch({type:LOGOUT});
 
     }
@@ -16,12 +14,8 @@ const Profile = (props) => {
     if(props.credentials?.token !== ''){
         return (
             <div className="designProfile">
-                <div className="user">{props.credentials?.usuario?.nombre}</div>
-                <div className="user">{props.credentials?.usuario?.apellidos}</div>
-                <div className="user">{props.credentials?.usuario?.ciudad}</div>
-                <div className="user">{props.credentials?.usuario?.correo}</div>
-                <div className="user">{props.credentials?.usuario?.telefono}</div>
-                <div className="user">{props.credentials?.usuario?.direccion}</div>
+                <div className="user">{props.credentials?.user?.name}</div>
+                <div className="user">{props.credentials?.user?.email}</div>
                 <div className="user" onClick={()=>logOut()}>LOGOUT</div>
             </div>
         )

@@ -4,8 +4,8 @@ import "../Navbar/Navbar.css";
 
 function Navbar() {
     const history = useNavigate();
-    const llevame = () => {
-        history('/login');
+    const llevame = (destination) => {
+        history(destination);
     }
     return (
         <div className="navbar">
@@ -13,8 +13,8 @@ function Navbar() {
             <span>Home</span>
             <span>Movies</span>
             <span>My list</span>
-            <span onClick={() => llevame()}>Register</span>
-            <span onClick={() => llevame()}>Login</span>
+            <span onClick={() => llevame('/register')}>Register</span>
+            <span onClick={() => llevame('/login')}>Login</span>
         </div>
     )
 }

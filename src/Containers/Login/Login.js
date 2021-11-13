@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+import { connect } from 'react-redux';
+import { LOGIN } from '../../redux/types';
+
 
 const Login = (props) => {
 
@@ -30,19 +32,16 @@ const Login = (props) => {
         try {
 
             let res = await axios.post("https://reto-api.herokuapp.com/api/signin", body);
-            console.log("imprimir ", res);
             // localStorage.setItem("datosLogin", JSON.stringify(res.data.user));
-            // localStorage.setItem("token", JSON.stringify(res.data.token));
+            // localStorage.setItem("token", JSON.stringify(res.data.token));         
 
-             console.log("all info",res);
-             console.log("token: ",res.data.token);
-            
-                  
+            props.dispatch({type:LOGIN, payload: res.data}); //this line store/log in what we asked for
+
             history("/profile");
-            } catch (error) {
+        } catch (error) {
             setmsgError("Error in login");
-            }
         }
+    }
 
     return (
 
@@ -60,5 +59,4 @@ const Login = (props) => {
 };
 
 //export default Login;
-
-export default Login;
+export default connect()(Login);
