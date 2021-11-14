@@ -1,5 +1,23 @@
 .designProfile {
-    background-color: lightseagreen;
-    height: 15em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10%;
+    background-color: rgb(18, 19, 19);
     color: white;
+    height: 100vh;
+
+}
+
+.button {
+        height: 3em;
+        width: 10%;
+        background-color: rgb(223, 62, 33);
+        color: white;
+        border-radius: 0.2em;
+        display: flex;
+        margin-top: 2em;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
 }

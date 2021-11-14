@@ -5,13 +5,14 @@
     height: calc(100vh - 7em);
     justify-content: center;
     align-items: center;
+    background-color: black;
+    color: white;
 }
 
 .sendButton {
-    height: 3em;
-    width: 70%;
-    background-color: rgb(14, 14, 15);
-    color: white;
+    height: 20%;
+    width: 25%;
+   
     border-radius: 0.2em;
     display: flex;
     margin-top: 2em;
@@ -19,6 +20,7 @@
     align-items: center;
     font-size: 1.1em;
 }
+
 input.style-form-login {
     margin-top: 1em;
     height: 2em;

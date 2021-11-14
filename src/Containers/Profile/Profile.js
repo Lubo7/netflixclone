@@ -16,7 +16,7 @@ const Profile = (props) => {
             <div className="designProfile">
                 <div className="user">{props.credentials?.user?.name}</div>
                 <div className="user">{props.credentials?.user?.email}</div>
-                <div className="user" onClick={()=>logOut()}>LOGOUT</div>
+                <div className="button" onClick={()=>logOut()}>LOGOUT</div>
             </div>
         )
 
