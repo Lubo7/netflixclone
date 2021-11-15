@@ -46,12 +46,12 @@ const Profile = (props) => {
 
     return (
         <div className="form">
-            <h3>Perfil</h3>
+            <h2>Profile</h2>
             <div className="form-group">
                 <input
                     name="name"
                     type="text"
-                    placeholder="Name and surnam"
+                    placeholder="Name and surname"
                     value={userData?.name || ''} //Si no ponemos ningunos datos (userData.name), lo deja vacio y lo renderiza
                     onChange={handleChange} // cuando se lanza el evento onChange, se ejecuta la funcion handleChange
                 />
@@ -60,7 +60,7 @@ const Profile = (props) => {
                 <input
                     name="email"
                     type="email"
-                    placeholder="email"
+                    placeholder="Email"
                     value={userData?.email || ''} //Si no ponemos ningunos datos (userData.email), lo deja vacio y lo renderiza
                     onChange={handleChange} // cuando se lanza el evento onChange, se ejecuta la funcion handleChange
                 />
@@ -69,21 +69,18 @@ const Profile = (props) => {
                 <input
                     name="password"
                     type="password"
-                    placeholder="pasword"
+                    placeholder="Password"
                     value={userData?.password || ''} //Si no ponemos ningunos datos (userData.password), lo deja vacio y lo renderiza
                     onChange={handleChange} // cuando se lanza el evento onChange, se ejecuta la funcion handleChange
                 />
             </div>
             <div className="basics_row">    
-            <div className="send-button" onClick={handleSubmit}>Actualizar</div> {/*Un evento onClick ejecuta la funcion handleSubmit*/}
-            <div className="out-button" onClick={logOut}>Cerrar sesión</div> {/**/}
+            <div className="send-button" onClick={handleSubmit}>Update</div> {/*Un evento onClick ejecuta la funcion handleSubmit*/}
+            <div className="out-button" onClick={logOut}>Log out</div> {/**/}
             </div>
-           
-
         </div>
     )
 };
-
 
 export default connect((state)=>({
     credentials: state.credentials
