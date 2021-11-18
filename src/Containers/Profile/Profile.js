@@ -6,6 +6,8 @@ import {useNavigate} from 'react-router-dom';
 import './Profile.css';
 import { LOGOUT, UPDATE_USER  } from '../../redux/types';
 
+
+
 const Profile = (props) => {
 
     const [userData, setUserData] = useState(); //Con este hook inicializamos los datos de usuario

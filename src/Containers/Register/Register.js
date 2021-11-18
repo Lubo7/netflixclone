@@ -29,6 +29,8 @@ const RegistroUsuarios = () => {
     }
 
     return (
+        
+        
         <div className="designRegister" id="container-registro">
             <div className="contentRegister" id="contenido-registro">
                 <h2>Register</h2>
@@ -46,7 +48,8 @@ const RegistroUsuarios = () => {
                 <div className="sendButton" onClick={() => registrarUsuario()}>Register</div>
             </div>
         </div>
-    )
+       )
+       
 };
 
 export default connect((state) => ({
