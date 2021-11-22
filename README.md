@@ -25,7 +25,7 @@ React JS with Context API
 ### USERS
 
   #### Register
-  POST - https://reto-api.herokuapp.com/api/signup- { "email": "-", "password": "-", "name": "-" }
+  POST - https://reto-api.herokuapp.com/api/signup- { "email": "-", "password": "-", "name": "-" } 
 
   #### Login User
   POST - https://reto-api.herokuapp.com/api/signin - { "email": "-",  "password": "-" }
@@ -40,15 +40,14 @@ React JS with Context API
   DELETE - https://reto-api.herokuapp.com/api/61914ff4dbc592c607f43833
 
 #### Peliculas / Movies
-  POST - https://reto-api.herokuapp.com/api/pelicula
-  GET - https://reto-api.herokuapp.com/api/all
-  GET by ID - https://reto-api.herokuapp.com/api/6181618a9612978c0450d1c8
-  Search GET by Titulo - https://reto-api.herokuapp.com/pelicula/titulo/Four Minutes (Vier Minuten)
-  Search GET by genre - https://reto-api.herokuapp.com/pelicula/genero/Comedy
-  Search GET by actor - https://reto-api.herokuapp.com/pelicula/actor/Manny Whatmough
+  POST - https://reto-api.herokuapp.com/api/pelicula <br>
+  GET - https://reto-api.herokuapp.com/api/all<br>
+  GET by ID - https://reto-api.herokuapp.com/api/6181618a9612978c0450d1c8<br>
+  Search GET by Titulo - https://reto-api.herokuapp.com/pelicula/titulo/Four Minutes (Vier Minuten)<br>
+  Search GET by genre - https://reto-api.herokuapp.com/pelicula/genero/Comedy<br>
+  Search GET by actor - https://reto-api.herokuapp.com/pelicula/actor/Manny Whatmough<br>
 
 #### Pedido / Order
-   POST - https://reto-api.herokuapp.com/api/pedido
-   GET - https://reto-api.herokuapp.com/pedido/user/61815ee085adb752e4a38292
+   POST - https://reto-api.herokuapp.com/api/pedido<br>
+   GET - https://reto-api.herokuapp.com/pedido/user/61815ee085adb752e4a38292<br>
 
-```
