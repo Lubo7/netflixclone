@@ -3,7 +3,14 @@
 API deployed en Heroku: https://reto-api.herokuapp.com/
 
 ## TECNOLOGIAS IMPLEMENTADAS:
-![image](https://user-images.githubusercontent.com/16636086/138780246-dc69ba86-c111-42e6-8079-35ffeba723f9.png)
+
+### Frontend
+React JS with Context API
+
+### Backend
+  REST API with Node and Express JS
+  MongoDB
+  Firebase Storage for storing movies
 
 ## COMMANDS
 <br>
