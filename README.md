@@ -19,9 +19,9 @@ React JS with Context API
 1) Install libraries and dependencies for API --> npm install
 2) Prepare the cluster/database/collections in cloud.mongodb.com
 
+```
 ## END-POINTS
 
-```
 ### USERS
 
   #### Register
@@ -47,7 +47,6 @@ React JS with Context API
   Search GET by genre - https://reto-api.herokuapp.com/pelicula/genero/Comedy
   Search GET by actor - https://reto-api.herokuapp.com/pelicula/actor/Manny Whatmough
 
-```
 #### Pedido / Order
    POST - https://reto-api.herokuapp.com/api/pedido
    GET - https://reto-api.herokuapp.com/pedido/user/61815ee085adb752e4a38292
