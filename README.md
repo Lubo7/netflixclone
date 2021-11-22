@@ -8,15 +8,15 @@ API deployed en Heroku: https://reto-api.herokuapp.com/
 React JS with Context API
 
 ### Backend
-  REST API with Node and Express JS
-  MongoDB
+  REST API with Node and Express JS<br>
+  MongoDB<br>
   Firebase Storage for storing movies
 
 ## COMMANDS
 <br>
 
 ```
-1) Install libraries and dependencies for API --> npm install
+1) Install libraries and dependencies for API --> npm install<br>
 2) Prepare the cluster/database/collections in cloud.mongodb.com
 
 ```
